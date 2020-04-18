@@ -1,4 +1,4 @@
-package my.test.taskSberServer.model;
+package my.test.taskSberServer.dto;
 
 import java.util.List;
 
@@ -29,5 +29,14 @@ public class MessageDto {
 
     public void setCurrency(List currency) {
         this.currency = currency;
+    }
+
+    @Override
+    public String toString() {
+        return "MessageDto{" +
+                "RqUID=" + RqUID +
+                ", RqTm='" + RqTm + '\'' +
+                ", currency=" + currency +
+                '}';
     }
 }
